@@ -4,12 +4,18 @@
     box-sizing: border-box;
     /* background: cornflowerblue; */
 }
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 .padre{
     display: flex;
     flex-flow: column nowrap;
 }
     .header{
-        background: black;
+        background: url(Img/header.jpg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
         display: flex;
         flex-flow: column nowrap;
     }
@@ -23,17 +29,17 @@
             .logo{
                 background: lightpink;
                 flex: 1 1 auto;
-                height: 30px;
+                /* height: 30px; */
             }
             .nav{
                 background: lightpink;
                 flex: 5 1 auto;
-                height: 30px;
+                /* height: 30px; */
             }
             .social{
                 background: lightpink;
                 flex: 1 1 auto;
-                height: 30px;
+                /* height: 30px; */
             }
         .texto-principal{
             background: lightseagreen;
