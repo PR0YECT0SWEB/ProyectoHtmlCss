@@ -34,6 +34,9 @@ $(document).ready(function () {
 //     parrafo.toggleClass('display-4')
     
 // });
-
-
+$('#formulario').submit(function (e) { 
+    e.preventDefault();
+    var nombre = $('#nombre').val();
+    console.log(nombre)    
+});
 });
