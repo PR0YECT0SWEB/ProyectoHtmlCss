@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    
+    <!-- Implementacion de la libreria normalize -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
     <title>Bienesraices</title>
 </head>
 <body>
     <header class="header inicio">
-        <div class="contenedor">
+        <div class="contenedor contenido-header">
             <div class="barra">
                 <a href="index.html">
                     <img src="img/logo.svg" alt="LogoEmpresa">
@@ -25,26 +30,31 @@
             <h1>Venta de Casas y Departamentos Exclusivos de Lujo</h1>
         </div>
     </header>
-    <section>
+
+    <!-- La clase padre contenedor de la seccion centra todos los div de la section -->
+
+    <section class="contenedor seccion">
         <h2>Más Sobre Nosotros</h2>
 
-        <div>
-            <img src="img/icono1.svg" alt="Icono seguridad">
-            <h3>Seguridad</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dignissimos cum non cumque accusantium consectetur natus, temporibus molestiae eius, aliquid, tempore recusandae dicta similique ab harum ipsum porro architecto iusto.</p>
-        </div>
+        <div class="iconos-nosotros">
+            <div class="icono">
+                <img src="img/icono1.svg" alt="Icono seguridad">
+                <h3>Seguridad</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dignissimos cum non cumque accusantium consectetur natus, temporibus molestiae eius, aliquid, tempore recusandae dicta similique ab harum ipsum porro architecto iusto.</p>
+            </div class="icono">
 
-        <div>
-            <img src="img/icono2.svg" alt="Icono Mejor Precio">
-            <h3>El Mejor Precio</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dignissimos cum non cumque accusantium consectetur natus, temporibus molestiae eius, aliquid, tempore recusandae dicta similique ab harum ipsum porro architecto iusto.</p>
-        </div>
+            <div class="icono">
+                <img src="img/icono2.svg" alt="Icono Mejor Precio">
+                <h3>El Mejor Precio</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dignissimos cum non cumque accusantium consectetur natus, temporibus molestiae eius, aliquid, tempore recusandae dicta similique ab harum ipsum porro architecto iusto.</p>
+            </div class="icono">
 
-        <div>
-            <img src="img/icono3.svg" alt="Icono a Tiempo">
-            <h3>A Tiempo</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dignissimos cum non cumque accusantium consectetur natus, temporibus molestiae eius, aliquid, tempore recusandae dicta similique ab harum ipsum porro architecto iusto.</p>
-        </div>
+            <div class="icono">
+                <img src="img/icono3.svg" alt="Icono a Tiempo">
+                <h3>A Tiempo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dignissimos cum non cumque accusantium consectetur natus, temporibus molestiae eius, aliquid, tempore recusandae dicta similique ab harum ipsum porro architecto iusto.</p>
+            </div class="icono">
+        </div class="icono">
         
     </section>
 
