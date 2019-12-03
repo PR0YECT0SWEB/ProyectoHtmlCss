@@ -12,6 +12,8 @@ body{
     line-height: 2;
 }
 /* Globales */
+
+/* Siempre poner este ya que toma todo el tamaño disponible de la pantalla */
 img{
     max-width: 100%;
 }
@@ -48,6 +50,9 @@ h4{
 }
 .d-block{
     display: block!important;
+}
+.contenido-centrado{
+    max-width: 80rem;
 }
 
 /* Boton */
@@ -128,17 +133,24 @@ h4{
 }
 
 /* Anuncios */
-.contenedor-anuncios{
+.contenedor-anuncios{ 
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .anuncio{
-    flex-basis: calc(33.3% - 1rem);
+    /*  flex-shrink: 0; La posicion por defecto es 1 y hace que se enconja, se cambia a cero para que no se enconja */
+    /* flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(33.3% - 1rem); */
     /* border-style: solid;
     border-color: #B5B5B5;
     border-width: 1px; */
+    /* Es lo mismo que escribir flex-grow, flex-shrink y flex-basis*/
+    flex: 0 0 calc(33.3% - 1rem);
     border: 1px solid #B5B5B5;
     background-color: #F5F5F5;
+    margin-top: 2rem;
 }
 .contenido-anuncio{
     /* padding-left: 2rem;
@@ -164,6 +176,8 @@ h4{
     padding: 0;
     display: flex;
     justify-content: space-evenly; /*Para centrar*/
+    max-width: 50rem;
+    flex: 1;
 }
 .iconos-caracteristicas li{
     /* flex: 1; */
@@ -282,6 +296,8 @@ h4{
     color: white;
 }
 /* INTERNAS */
+
+/* Nosotros */
 .contenido-nosotros{
     display: grid;
     /* grid-template-columns: 50% 50%; */
@@ -295,4 +311,10 @@ h4{
     font-size: 2rem;
     margin: 0;
     padding: 1rem 0 3rem 0;
+}
+/* Anuncio */
+.resumen-propiedad{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
