@@ -4,13 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    
+    <!-- Implementacion de la libreria normalize -->
+
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Nosotros</title>
+    
+    <title>Bienesraices</title>
 </head>
 <body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="LogoEmpresa">
+                </a>
+                <nav class="navegacion">
+                    <a target="_blank" href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contactos.html">Contactos</a>
+                </nav>    
+            </div>            
+            
+        </div>
+    </header>
+    <main class="contenedor">
+        <h1 class="fw-300 centrar-texto">Conoce Sobre Nosotros</h1>
+        <div class="contenido-nosotros">
+            <div class="imagen">
+                <img src="img/nosotros.jpg" alt="Imagen Sobre Nosotros">
+            </div>
+            <div class="texto-nosotros">
+                <!-- El <blockquote> se utiliza para lo que alguien dice o un textimonial -->
+                <blockquote>25 Años de Experiencia</blockquote> 
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quia iure dolor suscipit molestias optio, necessitatibus eos ad pariatur sunt eaque expedita neque nobis nulla fuga id dignissimos quod magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, atque doloremque! Dolor quaerat recusandae dolorem totam impedit repudiandae, nesciunt eaque! Tempore illo vero molestiae veritatis accusamus, dolorum nisi doloribus ipsa.</p>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quia iure dolor suscipit molestias optio, necessitatibus eos ad pariatur sunt eaque expedita neque nobis nulla fuga id dignissimos quod magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, atque doloremque! Dolor quaerat recusandae dolorem totam impedit repudiandae, nesciunt eaque! Tempore illo vero molestiae veritatis accusamus, dolorum nisi doloribus ipsa.</p>
+            </div>
+        </div>
+    </main>
+    <section class="contenedor seccion">
+            <h2 class="fw-300 centrar-texto">Más Sobre Nosotros</h2>
     
-    <h1>Nostros</h1>
-    <a href="index.html">Volver</a>
+            <div class="iconos-nosotros">
+                <div class="icono">
+                    <img src="img/icono1.svg" alt="Icono seguridad">
+                    <h3>Seguridad</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dignissimos cum non cumque accusantium consectetur natus, temporibus molestiae eius, aliquid, tempore recusandae dicta similique ab harum ipsum porro architecto iusto.</p>
+                </div>
     
+                <div class="icono">
+                    <img src="img/icono2.svg" alt="Icono Mejor Precio">
+                    <h3>El Mejor Precio</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dignissimos cum non cumque accusantium consectetur natus, temporibus molestiae eius, aliquid, tempore recusandae dicta similique ab harum ipsum porro architecto iusto.</p>
+                </div>
+    
+                <div class="icono">
+                    <img src="img/icono3.svg" alt="Icono a Tiempo">
+                    <h3>A Tiempo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dignissimos cum non cumque accusantium consectetur natus, temporibus molestiae eius, aliquid, tempore recusandae dicta similique ab harum ipsum porro architecto iusto.</p>
+                </div>
+            </div>
+            
+        </section>
+
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer"></div>
+        <nav class="navegacion">
+            <a target="_blank" href="nosotros.html">Nosotros</a>
+            <a href="anuncios.html">Anuncios</a>
+            <a href="blog.html">Blog</a>
+            <a href="contactos.html">Contactos</a>
+        </nav class="navegacion">
+
+        <p class="copyright">Todos los Derechos Reservados 2019&copy;</p>
+    </footer>
 </body>
 </html>

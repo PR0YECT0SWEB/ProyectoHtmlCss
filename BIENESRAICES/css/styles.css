@@ -69,6 +69,10 @@ h4{
 }
 
 /* Header */
+.header{
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+}
 .header.inicio{
     background-image: url(../img/header.jpg);
     background-position: center center;
@@ -155,7 +159,132 @@ h4{
     color: #71B100;
     font-weight: 700;
 }
+.iconos-caracteristicas{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly; /*Para centrar*/
+}
+.iconos-caracteristicas li{
+    /* flex: 1; */
+    display: flex;
+}
+.iconos-caracteristicas li img{
+    margin-right: 2rem;
+}
+
 .ver-todas{
     display: flex;
     justify-content: flex-end;
+}
+
+/* Contacto Home */
+.imagen-contacto{
+    background-image: url(../img/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+.contenido-contacto{
+    flex: 1;
+    color: #ffffff;
+}
+.contenido-contacto p{
+    font-size: 1.8rem;
+}
+/* Seccion inferior */
+.seccion-inferior{
+    display: flex;
+    justify-content: space-between;
+}
+.seccion-inferior .blog{
+    flex-basis: 60%;
+}
+.seccion-inferior .testimoniales{
+    flex-basis: calc(40% - 2rem);
+}
+.entrada-blog{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.entrada-blog:last-of-type{
+    margin-bottom: 0;
+}
+
+.entrada-blog .imagen{
+    flex-basis: 40%;
+}
+.entrada-blog .texto-entrada{
+    flex-basis: calc(60% - 3rem);
+}
+.texto-entrada h4{
+    margin: 0;
+    line-height: 1.4;
+}
+.texto-entrada a{
+    color: black;
+    text-decoration: none;
+}
+.texto-entrada h4::after{
+    content: '';
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background: #71B100;
+    margin-top: 1rem;
+}
+.texto-entrada spam{
+    color: #E08709;
+}
+/* Testimoniales */
+.testimonial{
+    background-color: #71B100;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: white;
+    /* border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem; */
+    border-radius: 2rem;
+}
+.testimonial p{
+    text-align: right;
+}
+.testimonial blockquote::before{
+    content: '';
+    background-image: url(../img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    /* display: block; */
+    position: absolute;
+    top: 0;
+    left: -2rem;
+}
+.testimonial blockquote{
+    position: relative;
+    padding-left: 5rem;    
+    font-weight: 300;
+}
+/* Footer */
+.site-footer{
+    background-color: #333333;
+    margin: 0;
+}
+.contenedor-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.copyright{
+    margin: 0;
+    color: white;
+}
+/* INTERNAS */
+.contenido-nosotros{
+    display: grid;
+    /* grid-template-columns: 50% 50%; */
+    /* grid-template-columns: repeat(2, 50%); */
+    grid-template-columns: 1fr 1fr;
 }
